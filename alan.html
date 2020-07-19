@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    </head>
+    <body>
+        <div class="alan-btn"></div>
+
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "ba2ca1cc7a7ec86b2ff9f3ee75c193942e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    zIndex:999,
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+       <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">STORE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">The Generics</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">MUSIC</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="Images/Album 1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12</span>
+                        <button class="btn btn-primary shop-item-button" id="cough-a" type="button" onclick="myFunction(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="Images/Album 2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$10</span>
+                        <button class="btn btn-primary shop-item-button"type="button" id="fever-a" onclick="myFunctiona(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="Images/Album 3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="head-a" onclick="myFunctionb(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$11</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="pain-a" onclick="myFunctionc(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 5</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$8</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="vomit-a" onclick="myFunctiond(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 6</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$50</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="stomach-a" onclick="myFunctione(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="mask-a" onclick="myFunctionf(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="Images/Cofee.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$8</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="san-a" onclick="myFunctiong(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Vitamin Tablets</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="vit-a" onclick="myFunctionh(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Disinfectant Tissues</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$10</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="wipe-a" onclick="myFunctioni(); check();">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <div id="cough" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="l">12</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kk(); check();">-</button>
+                        <p id="still" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="k(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="fever" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album2</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="la">10</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kka(); check();">-</button>
+                        <p id="stilla" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="ka(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2a(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="head" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 2.png" width="100" height="100">
+                        <span class="cart-item-title">Album3</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="lb">2</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kkb(); check();">-</button>
+                        <p id="stillb" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="kb(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2b(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+
+                <div id="pain" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 3.png" width="100" height="100">
+                        <span class="cart-item-title">Album4</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="lc">11</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kkc(); check();">-</button>
+                        <p id="stillc" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="kc(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2c(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+
+                <div id="vomit" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 4.png" width="100" height="100">
+                        <span class="cart-item-title">Album5</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="ld">8</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kkd(); check();">-</button>
+                        <p id="stilld" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="kd(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2d(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="stomach" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album6</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="le">50</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kke(); check();">-</button>
+                        <p id="stille" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="ke(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2e(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="mask" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1a</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="lf">99</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kkf(); check();">-</button>
+                        <p id="stillf" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="kf(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2f(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="san" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1b</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="lg">8</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kkg(); check();">-</button>
+                        <p id="stillg" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="kg(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2g(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="vit" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1c</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="lh">1</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kkh(); check();">-</button>
+                        <p id="stillh" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="kh(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2h(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+                <div id="wipe" class="cart-row" style="display: none;">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 1.png" width="100" height="100">
+                        <span class="cart-item-title">Album1d</span>
+                    </div>
+                    <span class="cart-price cart-column"><p>$</p><p id="li">10</p></span>
+                    <div class="cart-quantity cart-column">
+                        <button id="-" style="margin-right: 10px;" onclick="kki(); check();">-</button>
+                        <p id="stilli" style="margin-right: 10px;">1</p>
+                        <button id="+" style="margin-right: 10px;" onclick="ki(); check();">+</button>
+                        <button class="btn btn-danger" type="button" id="cough-r" onclick="myFunction2i(); check();">REMOVE</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$<p id="still2">0</p></span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button" id="pur" onclick="pur()">PURCHASE</button>
+        </section>
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
